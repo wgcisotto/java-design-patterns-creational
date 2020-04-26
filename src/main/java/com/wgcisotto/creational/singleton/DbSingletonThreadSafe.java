@@ -15,7 +15,7 @@ public class DbSingletonThreadSafe {
     public static DbSingletonThreadSafe getInstance() {
         if(Objects.isNull(instance)){
             synchronized (DbSingletonThreadSafe.class){
-                if(Objects.isNull(null)){
+                if(Objects.isNull(instance)){
                     instance = new DbSingletonThreadSafe();
                 }
             }
