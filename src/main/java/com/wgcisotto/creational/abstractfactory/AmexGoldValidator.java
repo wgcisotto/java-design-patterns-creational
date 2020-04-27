@@ -1,9 +1,8 @@
 package com.wgcisotto.creational.abstractfactory;
 
-public class AmexGoldValidator extends Validator {
+public class AmexGoldValidator implements Validator {
 
-    @Override
-    boolean isValid(CreditCard creditCard) {
+    public boolean isValid(CreditCard creditCard) {
         return false;
     }
 
